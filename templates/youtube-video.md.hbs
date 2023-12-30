@@ -1,0 +1,21 @@
+---
+stereotype: youtube-video
+id: {{videoId}}
+channelId: {{channelId}}
+addedDate: {{added}}
+tags: ["#youtube-video"]
+---
+# {{title}}
+published: {{publishedHumanReadable}}
+channel: [[{{channelName}}]]
+video: https://youtube.com/watch?v={{videoId}}
+
+![[{{thumbnail_filename}}]]
+
+## Description
+{{description}}
+
+```dataviewjs
+await dv.view("Files/Views/YoutubeVideo", {self: this});
+```
+

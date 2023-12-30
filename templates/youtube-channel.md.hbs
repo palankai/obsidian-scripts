@@ -1,0 +1,18 @@
+---
+stereotype: youtube-channel
+tags: ["#youtube-channel"]
+id: {{id}}
+---
+# {{title}}
+URL: {{url}}
+started: {{publishedHumanReadable}}
+
+![[{{thumbnail_filename}}|300]]
+
+## Description
+
+{{description}}
+
+```dataviewjs
+await dv.view("Files/Views/YoutubeChannel", {self: this});
+```
